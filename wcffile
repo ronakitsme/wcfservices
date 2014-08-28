@@ -1,0 +1,48 @@
+ExeAndrUpdateDeliveredToConsigneePost
+Exe_Andr_Create_ConsignmentPost
+
+[DataContract]
+    public class CreateConsignment
+    {
+        [DataMember]
+        public string executivewlocationid { get; set; }
+        [DataMember]
+        public string customerbranchid { get; set; }
+        [DataMember]
+        public string consignmentprice { get; set; }
+        [DataMember]
+        public string consigneemobileno { get; set; }
+        [DataMember]
+        public string consigneelocationid { get; set; }
+        [DataMember]
+        public string pickupid { get; set; }
+        [DataMember]
+        public string topaypricestatus { get; set; }
+        [DataMember]
+        public string tobilledpricestatus { get; set; }
+        [DataMember]
+        public string tocashpricestatus { get; set; }
+        [DataMember]
+        public string codstatus { get; set; }
+        [DataMember]
+        public string toprice { get; set; }
+        [DataMember]
+        public string cod { get; set; }
+        [DataMember]
+        public string dpathname { get; set; }
+        [DataMember]
+        public Stream stream { get; set; }
+    }
+
+    [DataContract]
+    public class DeliveredToConsignee
+    {
+        [DataMember]
+        public string consignmentid { get; set; }
+        [DataMember]
+        public string execode { get; set; }
+        [DataMember]
+        public string pass { get; set; }
+        [DataMember]
+        public Stream stream { get; set; }
+    }
